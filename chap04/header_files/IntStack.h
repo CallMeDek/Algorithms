@@ -1,6 +1,9 @@
 #ifndef __INTSTACK__
 #define __INTSTACK__
 
+#include<stdio.h>
+#include<stdlib.h>
+
 typedef struct{
   int max;
   int ptr;
