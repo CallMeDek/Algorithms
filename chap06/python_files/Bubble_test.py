@@ -1,4 +1,4 @@
-from Bubble.Bubble import Bubble1, Bubble2, Bubble3
+from Sort.Bubble import Bubble1, Bubble2, Bubble3
 
 while(True):
   try:
