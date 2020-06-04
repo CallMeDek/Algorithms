@@ -27,6 +27,11 @@ class Shell(Sort):
       h = int(h/2)
 
 
+  def recursive_sort(self, start, end):
+    print("It is not implemented yet So it starts iterative sorting automatically.")
+    self.sort()
+
+
 class Shell2(Sort):
   def __init__(self):
     super().__init__()
@@ -55,3 +60,8 @@ class Shell2(Sort):
           j -= h
         x[j + h] = temp 
       h = int(h/2)
+
+
+  def recursive_sort(self, start, end):
+    print("It is not implemented yet So it starts iterative sorting automatically.")
+    self.sort()

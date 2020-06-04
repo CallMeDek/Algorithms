@@ -3,14 +3,19 @@ from abc import ABCMeta, abstractmethod
 class Sort(metaclass=ABCMeta):
   def __init__(self):
     self._list = []
-
+    self._size = 0
 
   @property
   def list(self):
     return self._list
 
 
-  def get_values(self):
+  @property
+  def size(self):
+    return self._size
+
+
+  def _set_size(self): 
     while(True):
       try:
         size = int(input("요소 개수: "))
@@ -19,7 +24,12 @@ class Sort(metaclass=ABCMeta):
       except ValueError:
         continue
       break
+    self._size = size
 
+
+  def get_values(self):
+    self._set_size()
+    size = self.size
     x = self.list
     for i in range(size):
       while(True):
@@ -28,7 +38,7 @@ class Sort(metaclass=ABCMeta):
         except ValueError:
           continue
         break
-      x.append(value)
+      x.append(value)   
 
 
   def print_values(self):
@@ -40,4 +50,9 @@ class Sort(metaclass=ABCMeta):
 
   @abstractmethod
   def sort(self):
+    pass
+
+
+  @abstractmethod
+  def recursive_sort(self, start, end):
     pass
