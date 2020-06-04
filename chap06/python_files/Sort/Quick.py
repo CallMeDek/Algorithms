@@ -1,17 +1,6 @@
 from Sort.Sort_template import Sort
 
 class Quick(Sort):
-  def __init__(self):
-    super().__init__()
-
-
-  def get_values(self):
-    super().get_values()
-
-
-  def print_values(self):
-    super().print_values()
-
 
   def sort(self):
     self.recursive_sort(0, len(self.a)-1) 

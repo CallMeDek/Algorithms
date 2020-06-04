@@ -1,8 +1,12 @@
 from Sort.Insertion import Insertion
+from Test_template import test
 
-print("삽입 정렬")
-insertion = Insertion()
-insertion.get_values()
-insertion.insertion_sort()
-print("정렬 후")
-insertion.print_values()
+
+def main():
+  print("삽입 정렬")
+  insertion = Insertion()
+  test(insertion, mode="r")
+
+
+if __name__ == "__main__":
+  main()

@@ -1,17 +1,9 @@
 from Sort.Sort_template import Sort
 
 class Shell(Sort):
-  def __init__(self):
-    super().__init__()
+  def get_list_len(self):
+    return super().size
 
-
-  def get_values(self):
-    super().get_values()
-
-   
-  def print_values(self):
-    super().print_values() 
-  
 
   def sort(self):
     x = super().list
@@ -33,17 +25,9 @@ class Shell(Sort):
 
 
 class Shell2(Sort):
-  def __init__(self):
-    super().__init__()
+  def get_list_len(self):
+    return super().size 
 
-
-  def get_values(self):
-    super().get_values()
-
-   
-  def print_values(self):
-    super().print_values() 
-  
 
   def sort(self):
     x = super().list

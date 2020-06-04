@@ -1,36 +1,17 @@
 from Sort.Bubble import Bubble1, Bubble2, Bubble3
+from Test_template import test
 
-while(True):
-  try:
-    print(f"버블 정렬")
-    nx = int(input("요소 개수 : "))
-    if nx < 0:
-      raise ValueError
-  except ValueError:
-    continue
-  break
 
-x = []
-for i in range(nx):
-  while(True):
-    try:
-      n = int(input(f"x[{i}] : "))
-      x.append(n)
-    except ValueError:
-      continue
-    break
+def main():
+  print("버블 정렬")
+  bubble1 = Bubble1()
+  test(bubble1, mode="r")
 
-bubble = Bubble1()
-bubble.copy(x)
-bubble.bubble_sort()
-bubble.print_sort() 
+  bubble2 = Bubble2()
+  test(bubble2, mode="r")
 
-bubble = Bubble2()
-bubble.copy(x)
-bubble.bubble_sort()
-bubble.print_sort() 
+  bubble3 = Bubble3()
+  test(bubble3, mode="r")
 
-bubble = Bubble3()
-bubble.copy(x)
-bubble.bubble_sort()
-bubble.print_sort() 
+if __name__ == "__main__":
+  main()

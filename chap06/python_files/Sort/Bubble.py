@@ -1,102 +1,65 @@
-from abc import ABCMeta
-from abc import abstractmethod
-
-class Bubble(metaclass=ABCMeta):
-  def __init__(self):
-    self._a = []
+from Sort.Sort_template import Sort
 
 
-  @property
-  def a(self):
-    return self._a
-
-  
-  def copy(self, x):
-    for ele in x:
-      self._a.append(ele)
+class Bubble1(Sort):
+  def get_list_len(self):
+    return super().size
 
 
-  def print_sort(self):
-    x = self._a
-    for ele in x:
-      print(f"{ele} ", end="")
-    print()
-
-
-  @abstractmethod
-  def bubble_sort(self, x):
-    pass
-
-
-class Bubble1(Bubble):
-  def __init__(self):
-    super().__init__()
-    
-
-  def copy(self, x):
-    super().copy(x)
-
-
-  def bubble_sort(self):
-    x = super().a
-    for i in range(len(x)-1):
-      for j in range(len(x)-1-i):
+  def sort(self):
+    x = super().list
+    size = super().size
+    for i in range(size-1):
+      for j in range(size-1-i):
         if(x[j] > x[j + 1]):
           x[j], x[j + 1] = x[j + 1], x[j]
 
 
-  def print_sort(self):
-    print("Bubble1 : ")
-    super().print_sort()
+  def recursive_sort(self, start, end):
+    print("It is not implemented yet so it starts iterative sorting automatically.")
+    self.sort()
 
 
-class Bubble2(Bubble):
-  def __init__(self):
-    super().__init__()
-    
+class Bubble2(Sort):
+  def get_list_len(self):
+    return super().size
 
-  def copy(self, x):
-    super().copy(x)
-
-
-  def bubble_sort(self):
-    x = super().a
-    for i in range(len(x)-1):
+  def sort(self):    
+    x = super().list
+    size = super().size
+    for i in range(size-1):
       exchange_counter = 0
-      for j in range(len(x)-1-i):
+      for j in range(size-1-i):
         if(x[j] > x[j+1]):
           x[j], x[j+1] = x[j+1], x[j]
           exchange_counter += 1
-      if exchange_counter != 0:
+      if exchange_counter == 0:
         break
 
 
-  def print_sort(self):
-    print("Bubble2 : ")
-    super().print_sort()
+  def recursive_sort(self, start, end):
+    print("It is not implemented yet so it starts iterative sorting automatically.")
+    self.sort()
 
 
-class Bubble3(Bubble):
-  def __init__(self):
-    super().__init__()
-    
+class Bubble3(Sort):
+  def get_list_len(self):
+    return super().size
+  
 
-  def copy(self, x):
-    super().copy(x)
-
-
-  def bubble_sort(self):
-    x = super().a
+  def sort(self):
+    x = super().list
+    size = super().size
     i = 0
-    while(i < len(x)-1):
-      last = len(x)-1;
-      for j in range(len(x)-1, i, -1):
+    while(i < size-1):
+      last = size-1;
+      for j in range(size-1, i, -1):
         if(x[j-1] > x[j]):
           x[j-1], x[j] = x[j], x[j-1]
           last = j
       i = last
 
 
-  def print_sort(self):
-    print("Bubble3 : ")
-    super().print_sort()
+  def recursive_sort(self, start, end):
+    print("It is not implemented yet so it starts iterative sorting automatically.")
+    self.sort()
