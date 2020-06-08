@@ -6,7 +6,7 @@
 #include"partition.h"
 
 void quick(int [], int, int);
-
+void quick_iterative(int [], int, int);
 void print_values(int [], int, int);
 
 #endif
