@@ -90,7 +90,7 @@ void RemoveRear(List *list)
     if(list->n[list->head].next == Null)
       RemoveFront(list);
     else{
-      Index = ptr = list->head;
+      Index ptr = list->head;
       Index pre;
       while(list->n[ptr].next != Null){
         pre = ptr;

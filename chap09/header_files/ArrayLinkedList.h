@@ -3,7 +3,7 @@
 
 #include"Member.h"
 
-#define NULL -1
+#define Null -1
 
 typedef int Index;
 
