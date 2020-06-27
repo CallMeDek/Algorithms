@@ -15,7 +15,7 @@ typedef struct{
 
 void Initialize(Dlist *);
 void PrintCurrent(const Dlist *);
-Dnode *Search(Dlist *, const Member *,
+Dnode *search(Dlist *, const Member *,
               int (const Member *, const Member *));
 void Print(const Dlist *);
 void PrintReverse(const Dlist *);
