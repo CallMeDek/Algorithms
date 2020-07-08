@@ -102,3 +102,27 @@ void Dump(const ChainHash *h)
     putchar('\n');
   }
 }
+
+void Clear(ChainHash *h)
+{
+  int i;
+  Node *p;
+  Node *next;
+
+  for(i = 0; i < h->size; i++){
+    p = h->table[i];
+    while(p != NULL){
+      next = p->next;
+      free(p);
+      p = next;  
+    }  
+    h->table[i] = NULL;
+  }
+}
+
+void Terminate(ChainHash *h)
+{
+  Clear(h);
+  free(h->table);
+  h->size = 0;
+}
