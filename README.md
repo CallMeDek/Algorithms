@@ -1,7 +1,7 @@
 # Algorithms
 This is to summarize what I've learned about several algorithms.
 
-Leet: 리트코드에서 풀었던 알고리즘
+Leet: 리트코드에서 풀었던 알고리즘<br>
 Ch1 : 알고리즘이란, 조건 판단과 분기, 순서도, 반복<br>
 Ch2 : 배열, 구조체<br>
 Ch3 : 검색<br>
