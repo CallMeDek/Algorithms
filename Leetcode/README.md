@@ -55,3 +55,7 @@
 706_해시맵디자인: 개별 체이닝 정석으로 구현하는 방법을 위해서 다시 볼것
 
 771_보석과돌: 해시 테이블, defaultdict, Counter, Pythonic way
+
+3_중복문자없는가장긴부분문자열: 슬라이딩 윈도우 포인터
+
+347_상위K빈도요소: heapq, Counter.most_commmon, zip, *(asterisk)
