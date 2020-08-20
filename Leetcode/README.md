@@ -59,3 +59,7 @@
 3_중복문자없는가장긴부분문자열: 슬라이딩 윈도우 포인터
 
 347_상위K빈도요소: heapq, Counter.most_commmon, zip, *(asterisk)
+
+200_섬의개수: dfs, bfs, Nested_loop, discorved 생성 말고 1을 0으로
+
+17_전화번호문자조합: dfs, bfs
