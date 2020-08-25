@@ -63,3 +63,7 @@
 200_섬의개수: dfs, bfs, Nested_loop, discorved 생성 말고 1을 0으로
 
 17_전화번호문자조합: dfs, bfs
+
+46_순열: 순열, \[:\], copy, deepcopy, itertools.permutation, <b>*동시 참조 관련 실수*</b>
+
+77_조합: 조합, itertools.combinations
