@@ -67,3 +67,7 @@
 46_순열: 순열, \[:\], copy, deepcopy, itertools.permutation, <b>*동시 참조 관련 실수*</b>
 
 77_조합: 조합, itertools.combinations
+
+332_일정재구성: dfs, 반복보다는 재귀, <b>*실패*</b>
+
+207_코스스케쥴: dfs, 가지치기, defaultdict 순회 주의, <b>* 노드 삽입한 영역에서 pop 해야함 실수*</b>
