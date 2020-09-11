@@ -107,3 +107,5 @@
 105_전위중위순회결과로이진트리구축: 순회
 
 215_배열의K번째큰요소: heapq, heapq.heapify, heapq.nlargest, 정렬은 파이썬 내부 정렬함수가 가장 빠르다, <b>*percolate_down실수*</b>
+
+208_트라이구현: 트라이 구현
